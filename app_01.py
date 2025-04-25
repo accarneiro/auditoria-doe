@@ -43,7 +43,7 @@ if links:
                 st.markdown(f"#### Ato {j}")
                 st.markdown(
                     f"""
-                    <div style='border:1px solid #ccc; padding:10px; max-height:400px; overflow:auto; background-color:#f9f9f9;'>
+                    <div style='border:1px solid #ccc; padding:10px; overflow:auto; background-color:#f9f9f9;'>
                     {ato[0]}
                 </div>
                     """,
@@ -70,6 +70,7 @@ if links:
             )
 
     with col_link:
+        st.markdown("### Link carregado")
         try:
             response = requests.get(links[i], verify=False)
             response.raise_for_status()
