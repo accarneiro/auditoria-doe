@@ -1,20 +1,21 @@
 [tool.poetry]
-name = "auditoria-doe"
+name = "auditoria_doe"
 version = "0.1.0"
-description = ""
-authors = ["accarneiro <alexcamanho@gmail.com>"]
-readme = "README.md"
+description = "A simple Streamlit app that displays 'Hello World'."
+authors = ["Your Name <youremail@example.com>"]
+license = "MIT"
 
 [tool.poetry.dependencies]
-python = "^3.11"
-pydantic-settings = "^2.8.1"
-sqlalchemy = "^2.0.40"
-psycopg2-binary = "^2.9.10"
-streamlit = "^1.44.1"
-requests = "^2.32.3"
-streamlit-js-eval = "^0.1.7"
-
+python = "^3.12"
+streamlit = "^1.0.0"
+pytest = "^8.3.5"
+pytest-mock = "^3.14.0"
+sqlalchemy = "^2.0.41"
+pydantic-settings = "^2.9.1"
+psycopg = {extras = ["binary"], version = "^3.2.9"}
+urllib3 = "^2.4.0"
+plotly = "^6.1.1"
 
 [build-system]
-requires = ["poetry-core"]
+requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
